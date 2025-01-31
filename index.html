@@ -16,8 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-
+<body class="sora-regular">
     <header class="w-full sm:w-5/6 mx-auto">
         <div class="hidden sm:flex justify-between items-center py-4"> <!-- Large Device NavBar -->
             <div class="flex-grow">
@@ -34,11 +33,10 @@
                 <i class="fa-solid text-xl fa-magnifying-glass cursor-pointer"></i>
                 <i class="fa-solid text-xl fa-cart-shopping cursor-pointer"></i>
                 <p class="border-[1.5px] border-[#179800] px-3 py-1 rounded-lg cursor-pointer">Login</p>
-                <p class="border-[1.5px] border-[#179800] accent-bg px-4 py-1 rounded-lg cursor-pointer text-white">
+                <p class="border-[1.5px] border-[#179800] bg-[#179800] px-4 py-1 rounded-lg cursor-pointer text-white">
                     Register</p>
             </div>
         </div>
-
         <div class="sm:hidden flex justify-between items-center py-3 px-4 border-b-[1.5px] border-[#179800]">
             <!-- Small Device NavBar -->
             <img src="assets/mini-icon.png" alt="">
@@ -46,11 +44,24 @@
                 <i class="fa-solid text-2xl text-[#179800] fa-bars"></i>
             </div>
         </div>
-
     </header>
-
     <main>
-
+        <div
+            class=" overflow-hidden sm:mt-[90px] mt-[48px] flex justify-center relative min-h-[400px] bg-gradient-to-t from-[#EFEBE3] to-[#EFEBE300]">
+            <!-- Hero Section -->
+            <div class="relative z-10 text-center flex flex-col justify-center">
+                <p class="sora-semibold sm:w-full w-[95%] mx-auto sm:text-5xl text-[32px] sm:leading-[60px]">
+                    Freshness <span class="text-[#179800]">You Can <br>
+                        Count</span> On, Prices You’ll Love!
+                </p>
+                <p
+                    class="text-[#111111] opacity-[80%] sm:text-lg sm:w-full w-[95%] mx-auto text-[16px] sm:pt-6 sm:pb-9 py-4">
+                    Shop your
+                    daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
+                    covered every day!</p>
+                <img src="assets/hero-vegetables.png">
+            </div>
+        </div>
     </main>
 
     <footer>
