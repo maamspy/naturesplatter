@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @keyframes scaleUpDown {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
 
 <body class="sora-regular">
@@ -32,9 +45,16 @@
             <div class="flex items-center gap-4">
                 <i class="fa-solid text-xl fa-magnifying-glass cursor-pointer"></i>
                 <i class="fa-solid text-xl fa-cart-shopping cursor-pointer"></i>
-                <p class="border-[1.5px] border-[#179800] px-3 py-1 rounded-lg cursor-pointer">Login</p>
-                <p class="border-[1.5px] border-[#179800] bg-[#179800] px-4 py-1 rounded-lg cursor-pointer text-white">
-                    Register</p>
+                <p
+                    class="transform hover:scale-110 border-[1.5px] border-[#179800] px-3 py-1 rounded-lg cursor-pointer text-[#179800] transition-all duration-300 hover:bg-[#179800] hover:text-white">
+                    Login
+                </p>
+
+                <p
+                    class="transform hover:scale-110 border-[1.5px] border-[#179800] bg-[#179800] px-4 py-1 rounded-lg cursor-pointer text-white transition-all duration-300 hover:bg-white hover:text-[#179800]">
+                    Register
+                </p>
+
             </div>
         </div>
         <div class="sm:hidden flex justify-between items-center py-3 px-4 border-b-[1.5px] border-[#179800]">
@@ -49,24 +69,26 @@
         <div
             class=" overflow-hidden sm:mt-[90px] mt-[48px] flex justify-center relative min-h-[400px] bg-gradient-to-t from-[#EFEBE3] to-[#EFEBE300]">
             <!-- Hero Section -->
-            <div class="relative z-10 text-center flex flex-col justify-center">
-                <p class="sora-semibold sm:w-full w-[95%] mx-auto sm:text-5xl text-[32px] sm:leading-[60px]">
-                    Freshness <span class="text-[#179800]">You Can <br>
-                        Count</span> On, Prices You’ll Love!
+            <div class="z-10 text-center flex flex-col justify-center">
+                <p class="sora-semibold sm:w-full w-[95%] mx-auto sm:text-5xl text-[32px] sm:leading-[60px]"
+                    style="animation: scaleUpDown 2s infinite ease-in-out;">
+                    Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!
                 </p>
                 <p
                     class="text-[#111111] opacity-[80%] sm:text-lg sm:w-full w-[95%] mx-auto text-[16px] sm:pt-6 sm:pb-9 py-4">
                     Shop your
                     daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
                     covered every day!</p>
-                <img src="assets/hero-vegetables.png">
+                <div class="justify-center flex"><img src="assets/hero-vegetables.png"
+                        class="max-w-[130%] sm:max-w-[100%]"></div>
             </div>
         </div>
         <div class="w-[92%] sm:w-5/6 mx-auto"> <!-- Services Section -->
             <p class="sora-semibold sm:text-4xl text-2xl text-[#179800] sm:mt-[140px] sm:mb-[48px] mt-[48px] mb-[32px]">
                 Services</p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 sm:pb-[140px] pb-[48px]">
-                <div class="bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
+                <div
+                    class="transform hover:scale-105 transition-all duration-300 bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
                     <div
                         class="w-[130px] h-[130px] bg-white rounded-full flex justify-center items-center mx-auto mb-4">
                         <img src="assets/service.png" class="w-20 h-20">
@@ -75,7 +97,8 @@
                     <p class="text-gray-600 mt-2 sora-light">We are always available to assist you. Get support anytime,
                         anywhere.</p>
                 </div>
-                <div class="bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
+                <div
+                    class="transform hover:scale-105 transition-all duration-300 bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
                     <div
                         class="w-[130px] h-[130px] bg-white rounded-full flex justify-center items-center mx-auto mb-4">
                         <img src="assets/delivery.png" class="w-20 h-20">
@@ -84,7 +107,8 @@
                     <p class="text-gray-600 mt-2 sora-light">Enjoy quick and reliable delivery to your doorstep with our
                         express service.</p>
                 </div>
-                <div class="bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
+                <div
+                    class="transform hover:scale-105 transition-all duration-300 bg-[#EFEBE3] p-6 rounded-lg text-center w-full sm:w-1/3">
                     <div
                         class="w-[130px] h-[130px] bg-white rounded-full flex justify-center items-center mx-auto mb-4">
                         <img src="assets/healthy.png" class="w-20 h-20">
@@ -111,9 +135,7 @@
                                 upto 30% flat!</p>
                             <button class="bg-white px-5 py-2 text-[20px] rounded-lg">Buy Now</button>
                         </div>
-
                         <img src="assets/vegetable-offer.png" class="absolute bottom-0 right-0 h-[228px]">
-
                     </div>
 
                     <!-- Right Section  -->
@@ -317,13 +339,8 @@
                             <img src="assets/india-gate-mock-up.png" class="sm:h-[270px] h-[160px]">
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
-
         </div>
         <div class="sm:h-[390px] h-[280px]"></div>
         <!-- Floating Newsletter Card -->
@@ -331,22 +348,46 @@
             <div
                 class="sm:p-[56px] p-[28px] bg-[#EFEBE3] rounded-xl w-[92%] sm:w-5/6 mx-auto transform -translate-y-1/2 flex sm:flex-row flex-col sm:gap-[80px] gap-[20px]">
                 <!-- Floating Things Container -->
-                <img src="assets/vegetable-busket.png" class="flex-[4] h-[180px] mx-auto w-[230px] sm:w-[442px] sm:h-[348px]">
+                <img src="assets/vegetable-busket.png"
+                    class="flex-[4] h-[180px] mx-auto w-[230px] sm:w-[442px] sm:h-[348px]">
                 <div class="flex-[5] flex flex-col justify-center sm:gap-8 gap-3">
-                    <h2 class="sm:sora-semibold sm:text-black text-[#179800] sora-bold text-center sm:text-left sm:text-4xl text-xl">Get Grocery News!</h2>
-                    <p class="text-[#111111] sm:text-lg text-base sm:text-left text-center">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="bg-white sm:w-[470px] w-[290px] sm:p-4 p-2 mt-2 rounded-lg" type="email" name="email" id="email" placeholder="Enter email....">
-                    <button class="bg-[#179800] sm:p-2 p-1 sm:w-36 w-28 mx-auto sm:mx-0 rounded-md text-white sora-light">Subscribe</button>
+                    <h2
+                        class="sm:sora-semibold sm:text-black text-[#179800] sora-bold text-center sm:text-left sm:text-4xl text-xl">
+                        Get Grocery News!</h2>
+                    <p class="text-[#111111] sm:text-lg text-base sm:text-left text-center">Exclusive training tips,
+                        ticks, product deals and more.</p>
+                    <input class="bg-white sm:w-[470px] w-[290px] sm:p-4 p-2 mt-2 rounded-lg" type="email" name="email"
+                        id="email" placeholder="Enter email....">
+                    <button
+                        class="bg-[#179800] sm:p-2 p-1 sm:w-36 w-28 mx-auto sm:mx-0 rounded-md text-white sora-light">Subscribe</button>
                 </div>
             </div>
         </div>
-
-
     </main>
-
-
-    <footer>
-
+    <footer class="bg-[#179800] text-white sm:pb-[140px]">
+        <div class="w-[92%] sm:w-5/6 mx-auto flex sm:flex-row flex-col justify-between sm:items-end gap-6">
+            <div class="sm:pr-[100px] sm:w-[400px]">
+                <img src="assets/logo-footer.png" class="mb-4 w-[100px] sm:w-[154px]">
+                <p class="opacity-[70%]">Discover a world of treats, toys, and essentials handpicked for your furry
+                    friends</p>
+            </div>
+            <div class="sm:pr-[100px] mt-4">
+                <ul class="flex flex-col gap-5">
+                    <li>Products</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="sm:pr-[100px]">
+                <p class="mb-4 mt-6">Follow Us</p>
+                <div class="text-2xl flex gap-8 mb-[48px] sm:mb-0">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
